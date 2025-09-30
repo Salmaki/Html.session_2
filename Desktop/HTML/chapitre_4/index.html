@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+<body>
+<form action="#" method="post">
+       <fieldset>
+         <legend>Contact Form</legend>
+     
+         <!-- Name -->
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" 
+                 aria-label="Full name" required>
+         <br><br>
+     
+         <!-- Email -->
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" 
+                aria-label="Email address" required>
+         <br><br>
+     
+         <!-- Phone -->
+         <label for="tel">Phone:</label>
+         <input type="tel" id="tel" name="tel" 
+               
+                pattern="[0-9]{10}" 
+                title="10 digits expected" 
+                aria-label="Phone number" required>
+         <br><br>
+     
+         <!-- Message -->
+         <label for="message">Message:</label>
+         <textarea id="message" name="message" rows="5" 
+                   aria-label="Your message" required>This is a test message</textarea>
+         <br><br>
+     
+         <!-- Submit -->
+         <button type="submit">Send</button>
+       </fieldset>
+     </form>
+      
+</body>
+</html>
